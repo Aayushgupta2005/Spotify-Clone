@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+  <body class="bg-black">
+    <div class="container p-1 flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded ">
+          <img src="assets/close.svg" class="invert close-btn" alt="">
+          <ul>
+            <li><img class="logo invert" src="assets/logo.svg" alt="Logo" /></li>
+            <li><img class="invert" src="assets/home.svg" alt="Home" />Home</li>
+            <li><img class="invert" src="assets/search.svg" alt="Search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded">
+          <div class="heading items-center">
+            <img class="invert" src="assets/library.svg" alt="Library-logo" />
+            <h3>Your Library</h3>
+          </div>
+          <div class="content">
+            <ul class="allsongcards">
+              <!-- <li class="songcard">
+                <div class="flex" style="gap: 10px;width: 70%;align-items: center;">
+                  <img class="invert" src="music.svg" alt="">
+                  <div>
+                    <div class="song-link" hidden>Helo</div>
+                    <div class="song-name">song name</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex" style="align-items: center;">Play Now<img class="invert" src="playbut.svg" alt=""></div>
+                  
+                </div>
+              </li> -->
+            </ul>
+          </div>
+          <div class="footer">
+            <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+            <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+          </div>
+        </div>
+        <div class="extrafooter">
+          <div class="leftside">
+            <h3>Preview of Spotify</h3>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+          </div>
+          <div class="rightside">
+            <!-- <button>Sign up free</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="header flex">
+          <div class="arrows flex">
+            <div class="hamburger invert">
+              <img src="assets/hamburger.svg" alt="">
+            </div>
+            <svg class="leftarrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+              <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="rightarrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+              <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="buttons">
+            <button class="sign-up">Sign up</button>
+            <button class="log-in">Log in</button>
+          </div>
+        </div>
+        <div class="spotify-playlists">
+          <h1>Spotify Playlists</h1>
+          <div class="cards_container">
+
+            <!-- <div class="card">
+              <svg class="play_button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" color="#000000" fill="#1fdf64">
+                <circle cx="25" cy="25" r="20" stroke="green" stroke-width="0" />
+                <path d="M20 17.5385V30.4615C20 31.9231 20 32.6538 20.4558 32.9615C20.9115 33.2692 21.5348 32.9295 22.7815 32.25L32.3189 26.7885C33.8191 25.9712 34.5692 25.5625 34.5692 24.9135C34.5692 24.2644 33.8191 23.8558 32.3189 23.0385L22.7815 17.577C21.5348 16.8974 20.9115 16.5577 20.4558 16.8654C20 17.1731 20 17.9038 20 19.3654V17.5385Z" fill="currentColor" />
+              </svg>
+              <img class="cardImage" src="https://i.scdn.co/image/ab67706f0000000287ab49173e3338878a25552c" alt="">
+              <h3 class="cardHeading">New Music Friday</h3>
+              <p class="cardContent">The very best in new music from around the world. Cover: Childish Gambino</p>
+            </div> -->
+     
+          </div>
+
+        </div>
+        <div class="playbar">
+          <div class="flex" id="upbarofplaybar">
+            <div id="songname"></div>
+            <div class="songbuttons">
+              <img id="previous" src="assets/prevsong.svg" alt="">
+              <img id="play" src="assets/playbut.svg" alt="">
+              <img id="next" src="assets/nextsong.svg" alt="">
+            </div>
+            <div class="flex durvol">
+              <div id="durationinminutes">00:00/00:00</div>
+              <div class="range flex">
+                <img src="assets/volume.svg" alt="">
+                <input type="range" name="volume" value="100" id="volrangebtn">
+              </div>
+            </div>
+          </div>
+          <div class="durationbar">
+            <div class="durationbarcircle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
