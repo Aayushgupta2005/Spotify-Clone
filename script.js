@@ -1,5 +1,6 @@
 async function getSongs(folder){
-    let data = await fetch(`http://192.168.29.146:3000/songs/${folder}`)
+    // http://192.168.29.146:3000
+    let data = await fetch(`/songs/${folder}`)
     let response=await data.text()
     let div=document.createElement("div")
     div.innerHTML=response
@@ -14,7 +15,7 @@ async function getSongs(folder){
     return links;
 }
 async function getImage(folder){
-    let data = await fetch(`http://192.168.29.146:3000/songs/${folder}`)
+    let data = await fetch(`/songs/${folder}`)
     let response=await data.text()
     let div=document.createElement("div")
     div.innerHTML=response
@@ -29,7 +30,7 @@ async function getImage(folder){
     return img_links;
 }
 async function getFolders(){
-    let data = await fetch("http://192.168.29.146:3000/songs/")
+    let data = await fetch("/songs/")
     let response = await data.text()
     let div=document.createElement("div")
     div.innerHTML=response
